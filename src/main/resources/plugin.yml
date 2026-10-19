@@ -1,0 +1,12 @@
+name: ${project.name}
+description: ${project.description}
+version: ${project.version}
+author: Lolok
+api-version: "1.19"
+main: me.lolok.strongholdfinder.StrongholdFinderPlugin
+commands:
+  strongholdfinder:
+    description: "Main command"
+    aliases:
+      - sf
+      - sfinder

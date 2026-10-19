@@ -1,0 +1,27 @@
+#Available modes: AUTO, STATIC
+#AUTO mode use Spigot's API to locate the nearest stronghold
+#STATIC mode use locations configured below to locate the nearest stronghold from a player
+mode: STATIC
+#Show the location in chat
+display-location: false
+explosion:
+  #Always explode when there isn't a location available
+  not-found: true
+  #Percentage of exploding chance when there is an available location
+  #You can use also decimal numbers like 15.5%
+  chance: 20%
+auto:
+  #In chunks
+  lookup-radius: 16
+static:
+  #Worlds' name are case-sensitive
+  #Locations format: <x:y:z>
+  locations:
+    world:
+      - 450:0:240
+      - 50:0:120
+    world2:
+      - 420:0:125
+messages:
+  nearby-location: "&3&l! &fNearest stronghold: &b&lX: &f%x% &b&lY: &f%y% &b&lZ: &f%z%"
+  not-found: "&6&l! &eThere appears to be no stronghold nearby..."
